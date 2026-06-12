@@ -12,6 +12,7 @@ url = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}
 response = requests.get(url)
 data = response.json()
 
+
 temperature = data["main"]["temp"]
 
 weather = data["weather"][0]["main"]
@@ -19,7 +20,7 @@ weather = data["weather"][0]["main"]
 print("Temperature:", temperature)
 print("Weather:", weather)
 
-alert = False
+alert = True
 
 if temperature > 35:
     alert = True
