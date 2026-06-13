@@ -21,7 +21,7 @@ jobs:
 
       - name: Generate Projects JSON
         env:
-          GITHUB_TOKEN_CUSTOM: ${{ secrets.TOKEN_CUSTOM }}
+          TOKEN_CUSTOM: ${{ secrets.TOKEN_CUSTOM }}
         run: python generate_projects.py
 
       - name: Commit Changes
