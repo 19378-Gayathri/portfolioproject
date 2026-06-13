@@ -31,4 +31,3 @@ with open("projects.json", "w", encoding="utf-8") as f:
     json.dump(projects, f, indent=4)
 
 print("projects.json updated")
-print("hello")
